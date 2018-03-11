@@ -1,5 +1,3 @@
-/* 22 февраль 12:40, актовый зал 3-го корпус, отметиться */
-
 /* job(Name, Position, Department) */
 job('Stive', 'Product Designer', 'Design').
 job('Laky', 'Junior Web Designer', 'Design').
