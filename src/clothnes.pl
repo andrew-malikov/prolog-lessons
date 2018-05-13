@@ -39,7 +39,7 @@ dressColor(Name, Color) :-
     color(Color),
     Name=='Наташа'.
     
-/* For Валя */
+/*  */
 clothesColor(Name, ShoesColor, DressColor) :-
     name(Name),
     shoesColor(Name, ShoesColor),
@@ -49,7 +49,7 @@ clothesColor(Name, ShoesColor, DressColor) :-
     shoesColor('Наташа', OtherShoesColor),
     OtherShoesColor\==ShoesColor.
 
-/* For Аня */
+/*  */
 clothesColor(Name, ShoesColor, DressColor) :-
     name(Name),
     shoesColor(Name, ShoesColor),
@@ -61,7 +61,7 @@ clothesColor(Name, ShoesColor, DressColor) :-
     DressColor\==OtherDressColor.
 
 
-/* For Наташа */
+/*  */
 clothesColor(Name, ShoesColor, DressColor) :-
     name(Name),
     shoesColor(Name, ShoesColor),
