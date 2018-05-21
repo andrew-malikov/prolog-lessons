@@ -7,7 +7,6 @@ listContain([X|_], X) :- !.
 listContain([_|Xs], Item) :-
     listContain(Xs, Item), !.
 listContain([X|_], Item) :-
-    is_list(X),
     listContain(X, Item).
 
 listConcat([], List, List).
@@ -30,15 +29,6 @@ listReverse([X|Xs], Reverse) :-
     listReverse(Xs, NewReverse),
     listConcat(NewReverse, [X], Reverse).
 
-/*
-isPalindromeList(List) :-
-    listReverse(List, ReversedList),
-    isPalindromeList(List, ReversedList).
-
-isPalindromeList([], _).
-isPalindromeList([X|Xs], [X|Rs]) :-
-    isPalindromeList(Xs, Rs).
-*/
 isPolindrome(List) :-
     listReverse(List, List).
 

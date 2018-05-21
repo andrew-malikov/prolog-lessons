@@ -10,7 +10,6 @@ oddSum(Number, Result) :-
     oddSum(NewNumber, NewResult),
     Result is NewResult+Number.
 
-
 evenOrOddSum(0, 0) :- !.
 evenOrOddSum(1, 1) :- !.
 evenOrOddSum(Number, Result) :-
