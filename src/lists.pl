@@ -1,3 +1,5 @@
+:- module(listConcat, [listConcat/3]).
+
 listLength([], 0).
 listLength([_|Xs], L) :-
     listLength(Xs, N),
